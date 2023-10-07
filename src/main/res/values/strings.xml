@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GradeFinder</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="choose_type">Choose the type of the course grade policy</string>
+    <string name="first_type">1 midterm 1 final</string>
+    <string name="second_type">2 midterm 1 final</string>
+    <string name="third_type">1 midterm 1 final 1 project</string>
+    <string name="fourth_type">1 midterm 1 final 2 project</string>
+    <string name="fifth_type">1 midterm 1 final 3 project</string>
+    <string name="sixth_type">2 midterm 1 final 1 project</string>
+    <string name="seventh_type">2 midterm 1 final 2 project</string>
+    <string name="GradeFinder">GradeFinder</string>
+    <string name="midterm">Midterm </string>
+    <string name="midterm2">Midterm2 </string>
+    <string name="final_text">Final </string>
+    <string name="pass_grade">Enter class pass grade </string>
+    <string name="percentile">Percentile </string>
+    <string name="perc">% </string>
+    <string name="calculate">Calculate </string>
+    <string name="project">Project </string>
+    <string name="project2">Project2 </string>
+    <string name="project3">Project3 </string>
+
+
+</resources>

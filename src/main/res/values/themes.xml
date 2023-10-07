@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GradeFinder" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">@color/button</item>
+    </style>
+
+    <style name="Theme.GradeFinder" parent="Base.Theme.GradeFinder" />
+
+    <style name="Theme.GradeFinder.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GradeFinder.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GradeFinder.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

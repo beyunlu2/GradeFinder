@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".first_type">
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/first_type"
+        android:onClick="go_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <EditText
+
+        android:id="@+id/Midterm1"
+        android:layout_width="94dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/back_button"
+        android:ems="10"
+        android:hint="@string/midterm"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/PassGrade1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PassGrade1"
+        app:layout_constraintTop_toBottomOf="@+id/PassGrade1" />
+
+    <EditText
+        android:id="@+id/Final1"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/back_button"
+        android:ems="10"
+        android:hint="@string/final_text"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Midterm1"
+        app:layout_constraintStart_toStartOf="@+id/Midterm1"
+        app:layout_constraintTop_toBottomOf="@+id/Midterm1" />
+
+    <EditText
+        android:id="@+id/PassGrade1"
+        android:layout_width="308dp"
+        android:layout_height="51dp"
+        android:background="@color/back_button"
+        android:ems="10"
+        android:hint="@string/pass_grade"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/MidtermPer1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/back_button"
+        android:ems="10"
+        android:hint="@string/perc"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/Midterm1"
+        app:layout_constraintTop_toBottomOf="@+id/PassGrade1" />
+
+    <EditText
+        android:id="@+id/FinalPer1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/back_button"
+        android:ems="10"
+        android:hint="@string/perc"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/MidtermPer1"
+        app:layout_constraintStart_toStartOf="@+id/MidtermPer1"
+        app:layout_constraintTop_toBottomOf="@+id/MidtermPer1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="81dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/percentile"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/MidtermPer1"
+        app:layout_constraintEnd_toEndOf="@+id/MidtermPer1"
+        app:layout_constraintStart_toStartOf="@+id/MidtermPer1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="211dp"
+        android:layout_height="130dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/button"
+        android:onClick="type1_calculate"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Project3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Project1"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/back_button"
+        android:ems="10"
+        android:hint="@string/project"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Final1"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/Final1"
+        app:layout_constraintTop_toBottomOf="@+id/Final1" />
+
+
+    <EditText
+        android:id="@+id/ProjectPer1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@color/back_button"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/perc"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/FinalPer1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/FinalPer1"
+        app:layout_constraintTop_toBottomOf="@+id/FinalPer1" />
+
+    <EditText
+        android:id="@+id/Project2"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/project2"
+        android:background="@color/back_button"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/Project1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Project1"
+        app:layout_constraintTop_toBottomOf="@+id/Project1" />
+
+    <EditText
+        android:id="@+id/ProjectPer2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/perc"
+        android:background="@color/back_button"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ProjectPer1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ProjectPer1"
+        app:layout_constraintTop_toBottomOf="@+id/ProjectPer1" />
+
+    <EditText
+        android:id="@+id/Project3"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@color/back_button"
+        android:hint="@string/project3"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/Project2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Project2"
+        app:layout_constraintTop_toBottomOf="@+id/Project2" />
+
+    <EditText
+        android:id="@+id/ProjectPer3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@color/back_button"
+        android:hint="@string/perc"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ProjectPer2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ProjectPer2"
+        app:layout_constraintTop_toBottomOf="@+id/ProjectPer2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
